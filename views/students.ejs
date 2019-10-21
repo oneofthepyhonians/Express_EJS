@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/main.css" x />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: lightgrey;
+            font-family: "Space Mono";
+        }
+
+        ul li {
+            list-style-type: `node;
+            display: inline;
+        }
+    </style>
+    <title>Student info</title>
+</head>
+
+
+<body>
+    <h3>Student info.....</h3>
+    <p>You have requested of the student named:<%= name %> </p>
+    <p>The student id off <%= name %> is:<%= id %> </p>
+    <br>
+    <h3>Subjects:</h3>
+    <ul>
+        <% subjects.forEach((item)=>{ %>
+        <li>
+            <%= item %>
+        </li>
+        <%
+        })%>
+    </ul>
+
+</body>
+
+</html>
